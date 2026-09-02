@@ -39,4 +39,4 @@ void loop() { //allright, into the loop
 }
 ```
 
-> **Hint:** on Arduino uno, the echo pin needs to be 2 or 3. Look at https://docs.arduino.cc/language-reference/en/functions/external-interrupts/attachInterrupt/
+> **Hint:** on Arduino uno, the echo pin needs to be 2 or 3（because it use the `attachInterrupt` function). Look at https://docs.arduino.cc/language-reference/en/functions/external-interrupts/attachInterrupt/
