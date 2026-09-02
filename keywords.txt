@@ -1,0 +1,12 @@
+########################################
+# keywords.txt
+########################################
+
+# Class
+HC_SR04	KEYWORD1
+
+# Methods and Functions
+HC_SR04	KEYWORD2
+initAttach	KEYWORD2
+available		KEYWORD2
+getD	KEYWORD2
