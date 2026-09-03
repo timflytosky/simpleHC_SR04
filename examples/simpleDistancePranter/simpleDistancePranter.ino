@@ -24,7 +24,7 @@ void setup() {  //setup the board
 
 
 void loop() { //allright, into the loop
-  if (hc_sr04.available()) { //chacking if the SR04 is ready
+  if (hc_sr04.available()) { //checking if the SR04 is ready
     float distance = hc_sr04.getD(); //saving the distance in float
     Serial.print("distance: ");
     Serial.println(distance); //print it out
