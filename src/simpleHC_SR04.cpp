@@ -16,7 +16,7 @@ bool HC_SR04::initAttach()
 	pinMode(this->trigPin, OUTPUT);
     pinMode(HC_SR04::echoPin, INPUT);
 
-	if (!digitalPinToInterrupt(HC_SR04::echoPin)) return false;
+	if (digitalPinToInterrupt(HC_SR04::echoPin) == -1) return false;
 	attachInterrupt(HC_SR04::echoPin, getHigh, CHANGE);
 	digitalWrite(this->trigPin, this->trigHL);
 	return true;
