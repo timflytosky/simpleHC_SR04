@@ -1,4 +1,4 @@
-//simpleDistancePranter.ino
+//simpleDistancePrinter.ino
 //attach guide:
 //HC-SR04 board
 //Vcc     5V
