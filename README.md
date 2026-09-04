@@ -1,6 +1,6 @@
 # simpleHC\_SR04 Arduino library
 
-This is a simple Arduino library that contains only one class, but <mark>none code blocking</mark>.
+This is a simple Arduino library that contains only one class, but <mark>non-blocking code</mark>.
 
 ## examples (in the `examples` folder)
 
