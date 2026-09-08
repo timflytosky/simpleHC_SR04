@@ -3,6 +3,12 @@
 
 #include <Arduino.h>
 
+#if defined(__AVR_ATmega328P__)
+	#define ATTACH_IRAMATTR
+#elif defined(ESP23) || defined(ESP8266)
+	#define ATTACH_IRAMATTR IRAM_ATTR
+#endif
+
 class HC_SR04
 {
 	unsigned long lastMicros = 0;
@@ -12,7 +18,7 @@ class HC_SR04
 	int trigPin;
 	bool trigHL = false;
 
-	static void getHigh();
+	static void ATTACH_IRAMATTR getHigh();
 public:
 	HC_SR04(int trigPin, int echoPin);
 	void initAttach();
