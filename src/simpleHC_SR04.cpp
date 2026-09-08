@@ -43,7 +43,7 @@ bool HC_SR04::available()
 	return HC_SR04::is_done;
 }
 
-void HC_SR04::getHigh()
+void ATTACH_IRAMATTR HC_SR04::getHigh()
 {
 	if (digitalRead(HC_SR04::echoPin))
 		HC_SR04::highStart = micros();
