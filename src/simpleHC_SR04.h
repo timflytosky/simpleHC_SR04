@@ -5,7 +5,7 @@
 
 #if defined(__AVR_ATmega328P__)
 	#define ATTACH_IRAMATTR
-#elif defined(ESP23) || defined(ESP8266)
+#elif defined(ESP32) || defined(ESP8266)
 	#define ATTACH_IRAMATTR IRAM_ATTR
 #endif
 
