@@ -21,7 +21,7 @@ class HC_SR04
 	static void ATTACH_IRAMATTR getHigh();
 public:
 	HC_SR04(int trigPin, int echoPin);
-	void initAttach();
+	bool initAttach();
 	float getD();
 	bool available();
 };
